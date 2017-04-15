@@ -56,6 +56,8 @@ namespace thevoid { namespace graphic {
 		
 			glfwMakeContextCurrent(w_Window);
 			glfwSetKeyCallback(w_Window, keyCallback);
+			glfwGetCursorPos(w_Window, &xPos, &yPos);
+			glfwSetCursorPosCallback(w_Window, posCallback);
 			glfwSetWindowSizeCallback(w_Window, w_resize);
 			
 
@@ -238,6 +240,7 @@ namespace thevoid { namespace graphic {
 		glViewport(0, 0, w_ChangeWidth, w_ChangeHeigh);
 	}
 
+	// get all key pressed on keyborad by user
 	void  window::keyCallback(GLFWwindow* w_KCBCwindow, int key, int scancode, int action, int mods)
 	{
 
@@ -247,6 +250,14 @@ namespace thevoid { namespace graphic {
 		}
 
 	}
+
+	// get mouse postion 
+	void window::posCallback(GLFWwindow * w_PCBwindow, double xPos, double yPos)
+	{
+		std::cout << xPos << " * " << yPos << std::endl;
+	}
+
+
 	
 
 

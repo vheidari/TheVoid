@@ -119,9 +119,20 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="src\graphic\window.cpp" />
+    <ClCompile Include="src\input\keyboard.cpp" />
+    <ClCompile Include="src\input\mouse.cpp" />
+    <ClCompile Include="src\math\vector2d.cpp" />
+    <ClCompile Include="src\math\vector3d.cpp" />
+    <ClCompile Include="src\math\vector4d.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\graphic\window.h" />
+    <ClInclude Include="src\input\keyboard.h" />
+    <ClInclude Include="src\input\mouse.h" />
+    <ClInclude Include="src\math\maths.h" />
+    <ClInclude Include="src\math\vector2d.h" />
+    <ClInclude Include="src\math\vector3d.h" />
+    <ClInclude Include="src\math\vector4d.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

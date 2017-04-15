@@ -5,6 +5,8 @@ Email  : vahid-heidari@hotmail.com
 Licence : MIT
 */
 
+
+
 #include <GL\glew.h>
 #include <GLFW\glfw3.h>
 #include <iostream>
@@ -35,6 +37,7 @@ namespace thevoid { namespace graphic {
 	private:
 		GLFWimage w_LoadIcon(std::string  w_IconPath);
 		static void keyCallback(GLFWwindow* w_KCBCwindow, int key, int scancode, int action, int mods);
+		static void posCallback(GLFWwindow* w_PCBwindow,  double xPos, double yPos);
 	
 	// private variable
 	private:
@@ -43,6 +46,8 @@ namespace thevoid { namespace graphic {
 		int w_Height;
 		const char *w_Title;
 		bool w_Fullscreen = false;
+		double xPos;
+		double yPos;
 	
 	//protected function	
 	protected:
