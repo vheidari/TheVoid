@@ -7,9 +7,25 @@ Licence : MIT
 
 
 #include "mouse.h"
+#include <iostream>
 
-namespace thevoid {  namespace keyboard {
+
+namespace thevoid {  namespace mouse {
 
 
+	mouse::mouse()
+	{
+
+	}
+
+	mouse::~mouse()
+	{
+
+	}
+
+	void mouse::m_XYPosCallBack(GLFWwindow * w_Window, double m_XPos,  double m_YPos)
+	{
+		std::cout << m_XPos << " * " << m_YPos << std::endl ;
+	}
 	
 }}

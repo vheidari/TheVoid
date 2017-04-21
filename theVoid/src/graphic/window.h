@@ -6,16 +6,19 @@ Licence : MIT
 */
 
 
-
 #include <GL\glew.h>
 #include <GLFW\glfw3.h>
 #include <iostream>
 #include <string>
 #include <png.h>
+#include "..\input\mouse.h"
 
+using namespace std;
+using namespace thevoid;
+using namespace mouse;
 
 namespace thevoid { namespace graphic {
-	class window
+	class window : public mouse
 	{
 	// public function
 	public:
@@ -28,7 +31,7 @@ namespace thevoid { namespace graphic {
 		inline int  w_GetWidth() { return w_Width; }
 		inline int w_GetHeigh() { return w_Height; }
 		void w_Icon(std::string w_SmallWindowIcon, std::string w_LargeWindowIcon);
-
+		
 	// public variable
 	public:
 		GLFWwindow *w_Window;

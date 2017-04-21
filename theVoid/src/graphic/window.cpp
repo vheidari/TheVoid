@@ -53,11 +53,11 @@ namespace thevoid { namespace graphic {
 			return false;
 		}
 		
-		
+					
 			glfwMakeContextCurrent(w_Window);
 			glfwSetKeyCallback(w_Window, keyCallback);
-			glfwGetCursorPos(w_Window, &xPos, &yPos);
-			glfwSetCursorPosCallback(w_Window, posCallback);
+			glfwGetCursorPos(w_Window, &m_XPos, &m_YPos);
+			glfwSetCursorPosCallback(w_Window, m_XYPosCallBack);
 			glfwSetWindowSizeCallback(w_Window, w_resize);
 			
 

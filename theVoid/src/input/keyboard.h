@@ -6,8 +6,37 @@ Licence : MIT
 */
 
 namespace thevoid { namespace keyboard {
+	class keyboard
+	{
+	
+	// public function
+	public:
+		keyboard();
+		~keyboard();
+
+	// public variable
+	public:
 
 
 
+	// private function
+	private:
+	
+	// private variable 
+	private:
+	
+
+	
+	// protected function
+	protected:
+	
+	// protected variable
+	protected:
+
+	
+	
+	};
+
+	
 
 }}
